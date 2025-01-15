@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Link para o Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Estilos personalizados */
+    body {
+      background-color: #f7f7f7;
+      font-family: 'Arial', sans-serif;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .login-container h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .login-container .form-control {
+      border-radius: 25px;
+      padding-left: 45px;
+    }
+    .login-container .form-group {
+      position: relative;
+    }
+    .login-container .form-group i {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #888;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      border-radius: 25px;
+      padding: 10px 20px;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h3>Login</h3>
+    <form action="login-process.php" method="POST">
+      <!-- Campo de Email -->
+      <div class="form-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" class="form-control" placeholder="Email" name="email" required>
+      </div>
+      <!-- Campo de Senha -->
+      <div class="form-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" class="form-control" placeholder="Senha" name="senha" required>
+      </div>
+      <!-- Botão de Login -->
+      <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+    </form>
+    <div class="footer">
+      <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
+      <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+    </div>
+  </div>
+
+  <!-- Link para o Bootstrap JS e dependências -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
